@@ -3,7 +3,7 @@
 Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
 The STATION table is described as follows:
 
-Station.jpg
+
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
@@ -22,6 +22,5 @@ Note
 You can write two separate queries to get the desired output. It need not be a single query.
 
 solution
-                       
                         select city, length(city) from station order by length(city),city asc limit 1;
                         select city, length(city) from station order by length(city) desc limit 1;
